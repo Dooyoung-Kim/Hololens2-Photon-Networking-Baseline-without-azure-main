@@ -27,21 +27,21 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             playersInRoom++;
         }
 
-        private void Awake()
-        {
-            if (Room == null)
-            {
-                Room = this;
-            }
-            else
-            {
-                if (Room != this)
-                {
-                    Destroy(Room.gameObject);
-                    Room = this;
-                }
-            }
-        }
+        //private void Awake()
+        //{
+        //    if (Room == null)
+        //    {
+        //        Room = this;
+        //    }
+        //    else
+        //    {
+        //        if (Room != this)
+        //        {
+        //            Destroy(Room.gameObject);
+        //            Room = this;
+        //        }
+        //    }
+        //}
 
         public override void OnEnable()
         {

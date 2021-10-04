@@ -59,13 +59,13 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         /// </summary>
         void Start()
         {  
-            progressLabel.SetActive(false);
-            controlPanel.SetActive(true);
-
             if (launcher_static && launcher_static != this)
                 Destroy(this);
             else
                 launcher_static = this;
+
+            progressLabel.SetActive(false);
+            controlPanel.SetActive(true);
         }
 
         public override void OnConnectedToMaster()

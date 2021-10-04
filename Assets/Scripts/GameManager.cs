@@ -73,8 +73,12 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         #region Public Methods
 
-        [Tooltip("The prefab to use for representing the player")]
-        public GameObject playerPrefab;
+        public static GameManager Instance;
+
+        void Start()
+        {
+            Instance = this;
+        }
 
         public void LeaveRoom()
         {

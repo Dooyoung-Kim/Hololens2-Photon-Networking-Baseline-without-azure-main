@@ -8,6 +8,9 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         private PhotonView pv;
         private string username;
 
+        [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
+        public static GameObject LocalPlayerInstance;
+
         private void Start()
         {
             pv = GetComponent<PhotonView>();
