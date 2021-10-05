@@ -74,9 +74,9 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             // #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
             if (isConnecting)
             {
+                isConnecting = false;
                 // #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
                 PhotonNetwork.JoinRandomRoom();
-                isConnecting = false;
             }
         }
 
